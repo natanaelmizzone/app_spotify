@@ -14,13 +14,13 @@ include "inc-cabecalho.php";
 
         <div class="row">
              <div class="col">
-               <table>
-                <tr>   
-                    <td>ID</id>
-                    <td>Artista</td>
-                    <td>Nome do álbum</td>
-                    <td>Ano</td>
-                    <td>tipo</td>
+               <table class="table table-striped">
+                <tr scope="row">   
+                    <td scope="col">ID</id>
+                    <td scope="col">Artista</td>
+                    <td scope="col">Nome do álbum</td>
+                    <td scope="col">Ano</td>
+                    <td scope="col">tipo</td>
                 </tr>
                 <?php 
                 #abrir conexão
