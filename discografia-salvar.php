@@ -11,11 +11,8 @@ echo "$artista - $nome - $ano - $tipo - $foto";
 
 #abrir conexão
 
-$conexao = mysqli_connect("localhost", "root", "", "db_spotify");
-if(!$conexao){
-    die("<h3>Erro</h3>".mysqli_connect_error());
+include "inc-conexao.php";
 
-}
 # inserir os dados
 
 $sql = "insert into tb_discografia(artista, nome, ano, tipo, foto) values('$artista', '$nome', $ano, '$tipo', '$foto')";
