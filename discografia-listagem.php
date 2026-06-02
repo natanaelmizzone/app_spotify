@@ -21,6 +21,7 @@ include "inc-cabecalho.php";
                     <td scope="col fw-bold">Nome do álbum</td>
                     <td scope="col fw-bold">Ano</td>
                     <td scope="col fw-bold">Tipo</td>
+                    <td scope="col fw-bold">Ações</td>
                 </tr>
                 <?php 
                 #abrir conexão
@@ -40,6 +41,11 @@ include "inc-cabecalho.php";
 
                     echo "<td> {$linha_resultado['ano']} </td>";
                     echo "<td> {$linha_resultado['tipo']} </td>";
+                    echo "<td> <a href='discografia-excluir.php?id={$linha_resultado['id']}'>Excluir</a> 
+
+                                <a href='discografia-editar.php?id={$linha_resultado['id']}'>Editar</a>
+                    </td>";
+
                     echo "</tr>";
                 }
 
